@@ -19,18 +19,18 @@
             font-weight: bold;
             color: white;
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
-            margin: 5px 0; /* Margen reducido entre títulos */
+            margin: 5px 0;
         }
         .buttons {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 5px; /* Menos espacio entre botones */
-            margin-top: 10px; /* Menos espacio entre títulos y botones */
+            gap: 12px; /* Más separación entre botones */
+            margin-top: 10px;
         }
         button {
             min-width: 230px;
-            padding: 10px 15px;
+            padding: 12px 18px;
             font-size: 18px;
             font-weight: bold;
             border: none;
@@ -42,6 +42,14 @@
             white-space: nowrap;
         }
 
+        /* Ajustes para los últimos botones en 2 renglones */
+        .double-line {
+            text-align: center;
+            max-width: 250px; /* Para que se ajuste mejor en pantallas chicas */
+            white-space: normal; /* Permite que el texto pase a otra línea */
+            line-height: 1.2; /* Espaciado entre líneas */
+        }
+
         /* Ajustes para móviles */
         @media (max-width: 600px) {
             h1, h2 {
@@ -49,13 +57,13 @@
                 margin: 2px 0;
             }
             .buttons {
-                gap: 4px;
+                gap: 15px;
                 margin-top: 5px;
             }
             button {
                 font-size: 16px;
                 min-width: 200px;
-                padding: 8px 12px;
+                padding: 10px 14px;
             }
         }
     </style>
@@ -68,8 +76,8 @@
         <a href="programacion.html"><button>Ver Programación</button></a>
         <a href="https://www.youtube.com/@Telefe/streams" target="_blank"><button>Ir a ver YouTube</button></a>
         <a href="redes.html"><button>Redes Sociales</button></a>
-        <a href="conductor.html"><button>¿Qué conductor de Streams Telefe preferís?</button></a>
-        <a href="gh.html"><button>¿Qué jugador de las últimas ediciones de GH preferís?</button></a>
+        <a href="conductor.html"><button class="double-line">¿Qué conductor de Streams Telefe preferís?</button></a>
+        <a href="gh.html"><button class="double-line">¿Qué jugador de las últimas ediciones de GH preferís?</button></a>
     </div>
 </body>
 </html>
