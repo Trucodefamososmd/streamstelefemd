@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales - Telefe</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, blue, green, red);
+        }
+        h1, h2 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+        }
+        h1 { top: 20px; }
+        h2 { top: 80px; }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100vh;
+        }
+        .section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .buttons img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .buttons img.ig {
+            width: 130px;
+        }
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>REDES</h1>
+    <h2>SOCIALES</h2>
+    <div class="container">
+        <div class="section"></div>
+    </div>
+
+    <div class="buttons">
+        <a href="https://mitelefe.com/" target="_blank"><img src="mitelefe.png" alt="Mi Telefe"></a>
+        <a href="https://www.instagram.com/telefe/" target="_blank"><img src="ig.png" alt="Instagram" class="ig"></a>
+        <a href="http://tiktok.com/@telefe" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+        <a href="https://twitter.com/telefe" target="_blank"><img src="x.png" alt="Twitter/X"></a>
+        <a href="https://www.twitch.tv/telefe" target="_blank"><img src="tw.png" alt="Twitch"></a>
+        <a href="https://www.youtube.com/@Telefe" target="_blank"><img src="yt.png" alt="YouTube"></a>
+        <a href="https://www.facebook.com/telefe" target="_blank"><img src="fc.png" alt="Facebook"></a>
+    </div>
+
+    <a href="index.html" class="back-button">Volver al Inicio</a>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación - Telefe</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, blue, green, red);
+            text-align: center;
+        }
+        .header {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .grid-container {
+            margin-top: 30px;
+            width: 85%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        .grid-item {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .back-button {
+            margin-top: 30px;
+            background-color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">📺 PROGRAMACIÓN STREAMS TELEFE 📺</div>
+
+    <div class="grid-container">
+        <div class="grid-item">FUERA DE JODA - LUNES A JUEVES - 18:00 a 20:00</div>
+        <div class="grid-item">EL DEBATE - LUNES A JUEVES - 20:00 A 21:45</div>
+        <div class="grid-item">GH EN VIVO - MIRAMOS LA GALA - LUNES A JUEVES - 21:45 A 00:00</div>
+        <div class="grid-item">GH EN VIVO - ESPIAMOS LA CASA CON POGGI - DOMINGO A JUEVES - 00:00 A 01:30</div>
+        <div class="grid-item">LA NOCHE DE LOS EXS - VIERNES - 21:00 A 00:00</div>
+        <div class="grid-item">GH EN VIVO - ESPIAMOS LA CASA CON MORA Y FEDE - SABADOS - 14:00 A 16:00</div>
+        <div class="grid-item">GH EN VIVO - ESPIAMOS LA CASA CON JULI FIAMINGO Y FEFE BONGIORNO - DOMINGOS - 20:00 A 21:00</div>
+        <div class="grid-item">¡LA PREVIA DE GH CON LA TORA! - DOMINGOS - 21:00 A 22:00</div>
+        <div class="grid-item">GH EN VIVO - MIRAMOS LA GALA CON LA TORA Y POGGI - DOMINGOS - 22:00 A 00:00</div>
+    </div>
+
+    <a href="index.html" class="back-button">Volver al Inicio</a>
+</body>
+</html>
